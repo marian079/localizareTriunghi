@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Determinare pozitie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coordonatele introduse</h1>
+    <p>Punctul A: (<span id="xA"></span>, <span id="yA"></span>)</p>
+    <p>Punctul B: (<span id="xB"></span>, <span id="yB"></span>)</p>
+    <p>Punctul C: (<span id="xC"></span>, <span id="yC"></span>)</p>
+    <p>Punctul M: (<span id="xM"></span>, <span id="yM"></span>)</p>
+
+    <script>
+        // Recuperarea datelor din Local Storage
+        document.getElementById("xA").textContent = localStorage.getItem("xA");
+        document.getElementById("yA").textContent = localStorage.getItem("yA");
+        document.getElementById("xB").textContent = localStorage.getItem("xB");
+        document.getElementById("yB").textContent = localStorage.getItem("yB");
+        document.getElementById("xC").textContent = localStorage.getItem("xC");
+        document.getElementById("yC").textContent = localStorage.getItem("yC");
+        document.getElementById("xM").textContent = localStorage.getItem("xM");
+        document.getElementById("yM").textContent = localStorage.getItem("yM");
+    </script>
+</body>
+</html>
